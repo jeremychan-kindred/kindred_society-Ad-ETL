@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'Dockerfile', '.']
+  args: ['build', '-t', 'europe-west2-docker.pkg.dev/kindred-bi-reporting/cloud-run-source-deploy/ad_etl_repo_image', '.']
 
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'europe-west2-docker.pkg.dev/kindred-bi-reporting/cloud-run-source-deploy/ad_etl_repo_image']

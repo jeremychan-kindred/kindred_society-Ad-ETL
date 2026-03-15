@@ -1,12 +1,6 @@
 steps:
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/kindred-bi-reporting/cloud-run-source-deploy/ad_etl_repo_image', '.']
-
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/kindred-bi-reporting/cloud-run-source-deploy/ad_etl_repo_image']
-
-images:
-- 'gcr.io/kindred-bi-reporting/cloud-run-source-deploy/ad_etl_repo_image'
-
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'deploy']
+  
 options:
   logging: CLOUD_LOGGING_ONLY

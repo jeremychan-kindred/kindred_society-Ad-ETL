@@ -1,0 +1,9 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'europe-west2-docker.pkg.dev/kindred-bi-reporting/kindred_society-Ad-ETL/ad_etl_repo_image', '.']
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'europe-west2-docker.pkg.dev/kindred-bi-reporting/kindred_society-Ad-ETL/ad_etl_repo_image']
+
+images:
+- 'europe-west2-docker.pkg.dev/PROJECT_ID/kindred-bi-reporting/kindred_society-Ad-ETL/ad_etl_repo_image'

@@ -9,4 +9,4 @@ images:
 - 'asia-east2-docker.pkg.dev/kindred-bi-reporting/cloud-run-source-deploy/ad_etl_repo_image'
 
 options:
-  logging: CLOUD_LOGGING_ONLYgit
+  logging: CLOUD_LOGGING_ONLY
